@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "aulas/backend/",
+			"problemMatcher": [],
+			"label": "npm: start - aulas/backend",
+			"detail": "nodemon index.js"
+		}
+	]
+}

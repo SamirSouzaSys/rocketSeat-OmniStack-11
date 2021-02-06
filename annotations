@@ -1,0 +1,110 @@
+--- install node LTS using package manager
+https://github.com/nodesource/distributions/blob/master/README.md
+
+# Using Ubuntu
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+node -v
+  v12.16.1
+
+
+--- install NPM
+npm -v
+6.13.4
+
+----
+Day 01
+
+npm init -y
+
+Routes
+npm install express
+
+//In that project
+node 3333
+react 3000
+
+node index.js // start app
+
+//execute a internal package
+npx create-react-app frontend
+
+-FrontEnd
+npm start
+
+expo
+expo app
+
+---
+Day 02
+
+Routes / Recursos
+app.get('/ROUTE',(request, response) => {
+
+})
+
+http's
+GET - buscar
+POST - Criar
+PUT - Alterar
+DELETE - Deletar
+
+- Query Params
+Filtro,Paginação
+parâmetros nomeados
+users?name=NomeAluno
+
+- Route Params
+Paramâmetros para identificar Recursos
+/users/:id
+
+- Request Body
+corpo requisição - riar/alterar recursos
+
+removed
+scripts{
+    "test": "echo \"Error: no test specified\" && exit 1"
+}
+
+- Databases
+Sql
+NoSqls
+
+->> SQLite
+Driver - Select * FROM
+Query builder - table('users').select('*')
+----Knex.js
+npm install sqlite3
+npm install knex
+npx knex init
+
+---------------------
+
+Projeto
+
+Entidades
+- ONG
+  . 
+
+- Caso (incident)
+
+Funcionalidades
+- Login ONG
+- Logout ONG
+
+- Cadastro ONG
+- Cadastro Novo Caso
+
+- Entrar em contato com a ONG
+
+- Listar casos específicos de uma ONG
+- Listar todos os casos
+
+- Deletar Caso
+
+nknex.org
+- migrations
+
+Download project
+npm install //modules will be installed
