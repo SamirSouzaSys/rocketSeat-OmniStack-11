@@ -2,6 +2,7 @@
 // isn't a file, it's a package, so we DON'T have to use the './'
 const express = require('express');
 const cors = require('cors');
+const { errors } = require('celebrate');
 // is a file, so we have to use the './'
 const routes = require('./routes');
 
@@ -19,8 +20,10 @@ app.use(cors());
 app.use(express.json());
 app.use(routes)
 
+app.use(errors());
 // root router
 // Request Body
 
 
-app.listen(3333); 
+// app.listen(3333); 
+module.exports = app;
